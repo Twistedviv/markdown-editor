@@ -1,0 +1,16 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]  # 监听 main 分支推送
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install and Build  # 安装依赖并构建
+        run: npm install && npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # 构建产物目录
