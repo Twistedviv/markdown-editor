@@ -1,0 +1,56 @@
+/**
+ * Syntax highlighting styles for code blocks
+ * Based on GitHub-style highlighting
+ */
+
+.hljs {
+  background: #1f2937 !important;
+  color: #f9fafb !important;
+  padding: 1rem !important;
+  border-radius: 0.5rem !important;
+  overflow-x: auto !important;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #6b7280 !important;
+  font-style: italic !important;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-type {
+  color: #f59e0b !important;
+}
+
+.hljs-string,
+.hljs-title {
+  color: #10b981 !important;
+}
+
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet {
+  color: #3b82f6 !important;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #ef4444 !important;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #8b5cf6 !important;
+}
+
+.hljs-function,
+.hljs-title.function_ {
+  color: #06b6d4 !important;
+}
+
+.hljs-attr,
+.hljs-attribute {
+  color: #f59e0b !important;
+}

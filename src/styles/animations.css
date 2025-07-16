@@ -1,0 +1,40 @@
+/**
+ * Custom animations for the unified editor interface
+ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Smooth transitions for mode switching */
+.mode-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Floating button hover effects */
+.floating-button {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.floating-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Preview hint animation */
+.preview-hint {
+  animation: fadeIn 0.3s ease-out;
+  backdrop-filter: blur(4px);
+}
