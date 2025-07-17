@@ -9,11 +9,9 @@ const App: React.FC = () => {
   return (
     <div className="h-screen bg-gray-50 flex flex-col">
       <Toolbar />
-      
       <div className="flex-1 overflow-hidden bg-white">
         <UnifiedEditor />
       </div>
-
       <Toaster
         position="bottom-center"
         toastOptions={{
