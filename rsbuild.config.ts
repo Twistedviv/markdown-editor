@@ -9,7 +9,7 @@ export default defineConfig({
     },
   },
   output: {
-    publicPath: '/markdown-editor/',
+    assetPrefix: './markdown-editor/',
   },
   tools: {
     postcss: {
