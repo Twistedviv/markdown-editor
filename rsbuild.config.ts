@@ -9,7 +9,7 @@ export default defineConfig({
     },
   },
   output: {
-    assetPrefix: './markdown-editor/',
+    assetPrefix: './',
   },
   tools: {
     postcss: {
