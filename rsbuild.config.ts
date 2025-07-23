@@ -8,6 +8,9 @@ export default defineConfig({
       index: './src/entry.tsx',
     },
   },
+  output: {
+    publicPath: '/markdown-editor/',
+  },
   tools: {
     postcss: {
       postcssOptions: {
